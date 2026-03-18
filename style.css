@@ -1,15 +1,18 @@
-/* Saikala Medicals - Custom Styles */
+/* saikalai Medicals - Custom Styles */
 
 :root {
-    --primary-color: #e91e63; /* Logo Magenta */
+    --primary-color: #e91e63;
+    /* Logo Magenta */
     --primary-light: #fce4ec;
-    --success-color: #00bfa5; /* Logo Teal */
+    --success-color: #00bfa5;
+    /* Logo Teal */
     --success-light: #e0f2f1;
     --warning-color: #ffc107;
     --warning-light: #fff3cd;
     --danger-color: #dc3545;
     --danger-light: #f8d7da;
-    --dark-color: #1e3d59; /* Logo Navy */
+    --dark-color: #1e3d59;
+    /* Logo Navy */
     --muted-color: #64748b;
     --white: #ffffff;
     --bg-light: #f8fafc;
@@ -17,34 +20,54 @@
 }
 
 /* Bootstrap Theme Overrides */
-.text-primary { color: var(--primary-color) !important; }
-.text-success { color: var(--success-color) !important; }
-.bg-primary { background-color: var(--primary-color) !important; }
-.bg-success { background-color: var(--success-color) !important; }
-.btn-primary { 
-    background-color: var(--primary-color); 
-    border-color: var(--primary-color); 
+.text-primary {
+    color: var(--primary-color) !important;
 }
-.btn-primary:hover, .btn-primary:focus { 
-    background-color: #d81b60; 
-    border-color: #d81b60; 
+
+.text-success {
+    color: var(--success-color) !important;
 }
-.btn-success { 
-    background-color: var(--success-color); 
-    border-color: var(--success-color); 
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
 }
-.btn-success:hover, .btn-success:focus { 
-    background-color: #00a896; 
-    border-color: #00a896; 
+
+.bg-success {
+    background-color: var(--success-color) !important;
 }
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #d81b60;
+    border-color: #d81b60;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #00a896;
+    border-color: #00a896;
+}
+
 .btn-outline-primary {
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
 .btn-outline-primary:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }
+
 .badge.bg-success-light {
     background-color: var(--success-light) !important;
     color: var(--success-color) !important;
@@ -59,7 +82,10 @@ body {
 }
 
 /* Spacing Helpers */
-.py-100 { padding-top: 100px; padding-bottom: 100px; }
+.py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 /* Navbar Styles */
 .navbar {
@@ -96,7 +122,7 @@ body {
     transition: var(--transition);
 }
 
-.nav-link:hover::after, 
+.nav-link:hover::after,
 .nav-link.active::after {
     width: calc(100% - 30px);
 }
@@ -152,8 +178,15 @@ body {
 
 /* Animation Classes */
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .animate-float {
@@ -179,7 +212,7 @@ body {
 
 .service-card:hover {
     border-color: var(--primary-light);
-    box-shadow: 0 1rem 3rem rgba(0,0,0,0.05) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.05) !important;
 }
 
 .icon-box {
@@ -191,10 +224,21 @@ body {
     justify-content: center;
 }
 
-.bg-primary-light { background-color: var(--primary-light); }
-.bg-success-light { background-color: var(--success-light); }
-.bg-warning-light { background-color: var(--warning-light); }
-.bg-danger-light { background-color: var(--danger-light); }
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+
+.bg-success-light {
+    background-color: var(--success-light);
+}
+
+.bg-warning-light {
+    background-color: var(--warning-light);
+}
+
+.bg-danger-light {
+    background-color: var(--danger-light);
+}
 
 /* Product Tabs */
 .product-tabs .nav-link {
@@ -247,7 +291,7 @@ body {
     top: -50px;
     right: -50px;
     font-size: 300px;
-    color: rgba(255,255,255,0.05);
+    color: rgba(255, 255, 255, 0.05);
     z-index: 0;
 }
 
@@ -279,7 +323,7 @@ footer.bg-dark {
 .social-icon {
     width: 40px;
     height: 40px;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -300,7 +344,7 @@ footer.bg-dark {
 }
 
 .footer-links a {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     transition: var(--transition);
 }
@@ -319,9 +363,11 @@ footer.bg-dark {
     .hero-section {
         text-align: center;
     }
+
     .hero-stat {
         flex: 1;
     }
+
     .display-3 {
         font-size: 3rem;
     }

@@ -1,4 +1,4 @@
-/* Saikala Medicals - Custom JS */
+/* saikalai Medicals - Custom JS */
 
 // Initialize AOS (Animate On Scroll)
 AOS.init({
@@ -6,6 +6,14 @@ AOS.init({
     easing: 'ease-in-out',
     once: true,
     mirror: false
+});
+
+// Update Copyright Year
+document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.querySelector('#year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 });
 
 // Sticky Navbar Logic
@@ -61,8 +69,8 @@ scrollTopBtn.addEventListener('click', () => {
 
 // WhatsApp Integration
 function openWhatsApp() {
-    const phoneNumber = "919876543210"; // Replace with actual business number
-    const message = encodeURIComponent("Hello Saikala Medicals, I would like to enquire about some medicines.");
+    const phoneNumber = "919750979297"; // Updated business number
+    const message = encodeURIComponent("Hello saikalai Medicals, I would like to enquire about some medicines.");
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
 }
 
@@ -73,17 +81,17 @@ if (subscribeForm) {
         e.preventDefault();
         const emailInput = subscribeForm.querySelector('input');
         const btn = subscribeForm.querySelector('button');
-        
+
         if (emailInput.value) {
             const originalText = btn.innerHTML;
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
             btn.disabled = true;
-            
+
             setTimeout(() => {
                 btn.innerHTML = '<i class="fas fa-check"></i>';
                 btn.classList.replace('btn-primary', 'btn-success');
                 emailInput.value = '';
-                
+
                 setTimeout(() => {
                     btn.innerHTML = originalText;
                     btn.classList.replace('btn-success', 'btn-primary');
@@ -99,7 +107,7 @@ const productTabs = document.querySelectorAll('.product-tabs .nav-link');
 const productItems = document.querySelectorAll('.product-item');
 
 productTabs.forEach(tab => {
-    tab.addEventListener('click', function() {
+    tab.addEventListener('click', function () {
         // Remove active class from all tabs
         productTabs.forEach(t => t.classList.remove('active'));
         // Add active class to clicked tab
@@ -122,7 +130,7 @@ productTabs.forEach(tab => {
                 }
             }
         });
-        
+
         // Re-refresh AOS to handle visibility changes
         AOS.refresh();
     });
